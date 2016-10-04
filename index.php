@@ -65,10 +65,11 @@ class Server
 		$user = $payload->repository->owner->login;
 		$repo = $payload->repository->name;
 		$sha = $payload->pull_request->head->sha;
+		$opener = $payload->pull_request->user->login;
 
 		$this->createPendingStatus($user, $repo, $sha);
 
-		if($user == 'LostKobrakai')
+		if($opener == 'LostKobrakai')
 			$this->createErrorStatus($user, $repo, $sha);
 		else
 			$this->createSuccessStatus($user, $repo, $sha);
