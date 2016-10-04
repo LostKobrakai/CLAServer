@@ -1,0 +1,7 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^6.2",
+        "knplabs/github-api": "^1.7",
+        "php-http/guzzle6-adapter": "^1.1"
+    }
+}

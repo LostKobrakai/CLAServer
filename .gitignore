@@ -1,0 +1,4 @@
+.idea
+vendor/
+ngrok
+.DS_Store
